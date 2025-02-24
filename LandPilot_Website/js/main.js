@@ -1,13 +1,18 @@
-// Main JavaScript file
+function toggleHamburgerMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-// Example function for mobile menu toggle
-function toggleMobileMenu() {
-    // Add your mobile menu toggle logic here
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.mobile-menu li').forEach(n => n.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    }));
 }
 
-// Add more JavaScript functions as needed
-
-// Event listeners
-document.addEventListener('DOMContentLoaded', function() {
-    // Add your event listeners and initialization code here
-});
+window.onload = () => {
+    toggleHamburgerMenu();
+};
