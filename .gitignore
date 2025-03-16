@@ -1,1 +1,25 @@
 .DS_Store
+# General exclusions
+.DS_Store
+Thumbs.db
+
+# Node.js and npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files #
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]rash
