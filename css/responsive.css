@@ -1,14 +1,14 @@
 /* Mobile Styles */
-@media (max-width: 768px) {
-    /* Add your mobile styles here */
+@media (width <= 768px) {
+  /* Add your mobile styles here */
 }
 
 /* Tablet Styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Add your tablet styles here */
+@media (width >= 769px) and (width <= 1024px) {
+  /* Add your tablet styles here */
 }
 
 /* Desktop Styles */
-@media (min-width: 1025px) {
-    /* Add your desktop styles here */
+@media (width >= 1025px) {
+  /* Add your desktop styles here */
 }

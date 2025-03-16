@@ -1,8 +1,8 @@
 {
   "extends": "stylelint-config-standard",
+  "plugins": ["@stylistic/stylelint-plugin"],
   "rules": {
-    "indentation": 2,
-    "declaration-empty-line-before": "never",
-    "rule-empty-line-before": "never"
+    "@stylistic/indentation": 2,
+    "no-descending-specificity": null
   }
 }
