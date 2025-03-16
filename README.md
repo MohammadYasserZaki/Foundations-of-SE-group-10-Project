@@ -166,5 +166,4 @@ and terms of use.
 
 Below is a basic UML diagram of the LandPilot website and how a User and
 Admin would interact with the
-system:![](media/image2.jpg){width="2.128850612423447in"
-height="5.741712598425197in"}
+![alt text]([http://url/to/img.png](https://github.com/MohammadYasserZaki/Foundations-of-SE-group-10-Project/blob/master/UML.jpeg))
