@@ -1,6 +1,4 @@
-![A logo for a university Description automatically
-generated](media/image1.jpg){width="5.140625546806649in"
-height="1.8143383639545057in"}
+![Uni_Logo](Uni_Logo.png)
 
 **ENGR 5510G- FOUNDATION OF SOFTWARE ENGINEERING**
 
@@ -11,6 +9,8 @@ height="1.8143383639545057in"}
 - **Ademoye Oluwadamifola Mark**
 
 - **Nafis Bhamjee**
+
+- **Hanbo Wang**
 
 - **Mohammad Yasser**
 
@@ -165,5 +165,5 @@ and terms of use.
 **4. UML (Unified Modeling Language) Diagram:**
 
 Below is a basic UML diagram of the LandPilot website and how a User and
-Admin would interact with the
-![alt text]([http://url/to/img.png](https://github.com/MohammadYasserZaki/Foundations-of-SE-group-10-Project/blob/master/UML.jpeg))
+Admin would interact with the system:
+![UML_Diagaram](UML.jpeg)
