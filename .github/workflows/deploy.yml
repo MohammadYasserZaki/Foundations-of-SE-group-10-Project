@@ -51,21 +51,21 @@ jobs:
           jest || true
           
       
-        # Lint HTML
-        - name: Lint HTML
-          run: npm run lint:html
+        # Lint HTML 
+      - name: Lint HTML
+        run: npm run lint:html
 
         # Lint CSS
-        - name: Lint CSS
-          run: npm run lint:css
+      - name: Lint CSS
+        run: npm run lint:css
 
         # Lint JS
-        - name: Lint JS
-          run: npm run lint:js
+      - name: Lint JS
+        run: npm run lint:js
 
         # Run Tests
-        - name: Run Tests
-          run: npm test
+      - name: Run Tests
+        run: npm test
 
   deploy:
     name: Deploy to GitHub Pages
