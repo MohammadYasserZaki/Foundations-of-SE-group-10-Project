@@ -1,4 +1,4 @@
-![Uni_Logo]([Uni_Logo.png))
+![Uni_Logo](Uni_Logo.png)
 
 **ENGR 5510G- FOUNDATION OF SOFTWARE ENGINEERING**
 
@@ -164,4 +164,4 @@ and terms of use.
 
 Below is a basic UML diagram of the LandPilot website and how a User and
 Admin would interact with the system:
-![UML_Diagaram]([UML.jpeg))
+![UML_Diagaram](UML.jpeg)
