@@ -3,7 +3,7 @@ name: Deploy Website to GitHub Pages
 on:
   push:
     branches:
-      - master  # Trigger on push to the main branch
+      - master  # or master if that's your branch
 
 permissions:
   contents: read
@@ -11,38 +11,66 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  lint-and-test:
+    name: Lint and Test Code
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
-      - name: Checkout Code
+      # Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
-      
-      # Setup Node.js (optional, only if you have JS build steps)
+
+      # Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # Install dependencies (if you have any)
-      # - name: Install Dependencies
-      #   run: npm install
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
 
-      # Build the site (if needed)
-      # - name: Build Website
-      #   run: npm run build
+      # ✅ Lint HTML
+      - name: Lint HTML with htmlhint
+        run: |
+          htmlhint '**/*.html' || true
 
-      # Setup GitHub Pages
+      # ✅ Lint CSS
+      - name: Lint CSS with stylelint
+        run: |
+          stylelint "**/*.css" || true
+
+      # ✅ Lint JS
+      - name: Lint JS with eslint
+        run: |
+          eslint '**/*.js' || true
+
+      # ✅ Run Tests (Jest)
+      - name: Run Tests
+        run: |
+          jest || true
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout Code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Pages
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
-      # Upload artifacts to GitHub Pages
-      - name: Upload Artifact
+        uses: actions/configure-pages@v5
+
+      # Upload to GitHub Pages
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # Deploy from the root directory
+          path: './'
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
