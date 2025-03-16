@@ -1,5 +1,5 @@
 export default {
-    transform: {},
-    extensionsToTreatAsEsm: ['.js']
+    transform: {}
+	//,extensionsToTreatAsEsm: ['.js']
   };
   
