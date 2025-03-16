@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "![Uni_Logo](Uni_Logo.png)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest",
-    "lint:html": "htmlhint '**/*.html'",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint:html": "htmlhint \"**/*.html\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:js": "eslint \"**/*.js\"",
     "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
@@ -18,7 +19,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/MohammadYasserZaki/Foundations-of-SE-group-10-Project/issues"
   },
