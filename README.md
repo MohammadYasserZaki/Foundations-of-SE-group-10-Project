@@ -12,7 +12,7 @@
 
 - **Hanbo Wang**
 
-- **Mohammad Zaki Yasser**
+- **Mohammad Yasser Zaki**
 
 ***The current build of this project can be found [here][https://mohammadyasserzaki.github.io/Foundations-of-SE-group-10-Project/]***
 
