@@ -218,8 +218,8 @@ body {
 }
 
 .plan h3 {
-  color: rgb(0, 34, 68);
   font-size: 1.5em;
+  color: #002244;
 }
 
 .plan .price {
@@ -245,7 +245,7 @@ body {
 .testimonials {
   text-align: center;
   padding: 50px;
-  background: #f8f8f8;
+  background: white;
 }
 
 .testimonial {
@@ -254,7 +254,7 @@ body {
   max-width: 600px;
   margin: 20px auto;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 10%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial img {
