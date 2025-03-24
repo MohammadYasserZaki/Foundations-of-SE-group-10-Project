@@ -77,6 +77,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-direction: row;
 
   /* background-color: blue; */
   gap: 2.0em;
