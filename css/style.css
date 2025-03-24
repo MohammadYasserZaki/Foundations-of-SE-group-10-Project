@@ -206,10 +206,6 @@ body {
   transition: background 0.3s ease;
 }
 
-.btn:hover {
-  background: #cc5200;
-}
-
 
 /* Subscription Plans */
 .subscriptions {
@@ -218,7 +214,7 @@ body {
   background: white;
 }
 
-.subscriptions_1 {
+.subscriptions-1 {
   display: flex;
 }
 
@@ -228,7 +224,7 @@ body {
   padding: 20px;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 10%);
 }
 
 .plan h3 {
@@ -268,7 +264,7 @@ body {
   max-width: 600px;
   margin: 20px auto;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 10%);
 }
 
 .testimonial img {
@@ -306,7 +302,7 @@ body {
 }
 
 .btn:hover {
-  background: #cc5200;
+  background: #CC5200;
 }
 
 
@@ -339,7 +335,7 @@ body {
     margin-top: 50px;
   }
 
-  .subscriptions_1{
+  .subscriptions-1{
     display: flex;
     flex-direction: column;
   }
