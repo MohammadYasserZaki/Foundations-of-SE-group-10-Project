@@ -196,17 +196,6 @@ body {
   margin: 0.5em 0 1em;
 }
 
-.btn {
-  background: #ff6600;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  transition: background 0.3s ease;
-}
-
-
 /* Subscription Plans */
 .subscriptions {
   text-align: center;
@@ -224,7 +213,7 @@ body {
   padding: 20px;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #0000001a;
+  box-shadow: 0 0 10px #0000001a;
 }
 
 .plan h3 {
@@ -234,7 +223,7 @@ body {
 
 .plan .price {
   font-size: 1.8em;
-  color: #007BFF;
+  color: rgb(0, 123, 255);
 }
 
 .plan .old-price {
@@ -264,7 +253,7 @@ body {
   max-width: 600px;
   margin: 20px auto;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 10%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 10%);
 }
 
 .testimonial img {
@@ -294,7 +283,7 @@ body {
 /* CTA Button */
 .btn {
   display: inline-block;
-  background: #FF6600;
+  background: rgb(255, 102, 0);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
